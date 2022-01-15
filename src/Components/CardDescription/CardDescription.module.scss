@@ -1,0 +1,13 @@
+.card_description {
+    width: 500px;
+    color: black;
+    position: relative;
+    margin-top: -10px;
+    z-index: 2;    
+    
+    .card__descriptionContainer{ 
+    display: flex;
+    justify-content: space-between;
+    }
+  }
+  

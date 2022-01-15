@@ -1,12 +1,12 @@
 import CardDescription from '../CardDescription'
 import CardImage from '../CardImage'
+import styles from "./FlatCard.module.scss";
 
 
-
-const FlatsCard = ({ country, title, maxGuests, image }) => (
-  <div className="product-card">
+const FlatsCard = ({ type, title,  beds, rating, image }) => (
+  <div className={styles.card}>
     <CardImage src={image} />
-    <CardDescription country={country} title={title} maxGuests={maxGuests} />
+    <CardDescription type={type} beds={beds} rating={rating} title={title}  />
   </div>
 )
 
