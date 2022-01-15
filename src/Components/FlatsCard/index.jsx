@@ -3,10 +3,10 @@ import CardImage from '../CardImage'
 
 
 
-const FlatsCard = ({ title, description, image }) => (
+const FlatsCard = ({ country, title, maxGuests, image }) => (
   <div className="product-card">
     <CardImage src={image} />
-    <CardDescription title={title} description={description}  />
+    <CardDescription country={country} title={title} maxGuests={maxGuests} />
   </div>
 )
 

@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div>{state && data.rooms.map((flats) => <FlatsCard key={flats.id} title={flats.country}  description={flats.title} image={flats.photo}/>)}
+      <div>{state && data.rooms.map((flats) => <FlatsCard key={flats.id} country={flats.country}  title={flats.title} maxGuests={flats.maxGuests} image={flats.photo}/>)}
       </div></div>
   );
 }
