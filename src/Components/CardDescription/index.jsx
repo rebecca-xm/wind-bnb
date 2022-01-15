@@ -1,18 +1,19 @@
 import styles from "./CardDescription.module.scss";
 
-const CardDescription = ({ type, title,  beds, rating}) => (
+const CardDescription = ({ type, title, beds, rating }) => {
+  return (
     <div className={styles.card_description}>
-
-
-    <section className={styles.card__descriptionContainer}>
-        <p>{type} . {beds} beds</p>
-        <p>⭐{rating}</p>
-      </section>
+      <div className={styles.card__descriptionContainer}>
+        <span className={styles.info}>{type} . {beds} beds</span>
+      </div>
+      <div className={styles.ratingWrapper}>
+        <span className={styles.rating}>⭐{rating}</span>
+      </div>
       <div className={styles.title}>
-        <h3>{title}</h3>
+        {title}
       </div>
     </div>
-  
-  )
-  
-  export default CardDescription
+  );
+};
+
+export default CardDescription;
