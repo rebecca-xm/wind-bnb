@@ -1,19 +1,16 @@
-const CardDescription = ({ country,  title, maxGuests}) => (
-    <div className="card-description">
+import styles from "./CardDescription.module.scss";
 
-      <div className="card-description__Title">
-        <p className="card-description__title">{country}</p>
+const CardDescription = ({ type, title,  beds, rating}) => (
+    <div className={styles.card_description}>
+
+
+    <section className={styles.card__descriptionContainer}>
+        <p>{type} . {beds} beds</p>
+        <p>⭐{rating}</p>
+      </section>
+      <div className={styles.title}>
+        <h3>{title}</h3>
       </div>
-
-      <div className="card-description__descriptionContainer">
-        <p className="card-description__description">{title}</p>
-      </div>
-
-      <div className="card-description__maxguestsContainer">
-        <p className="card-description__maxguests">{maxGuests}</p>
-      </div>
-
-      
     </div>
   
   )
