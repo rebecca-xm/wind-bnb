@@ -1,8 +1,9 @@
 import styles from './App.module.scss';
 import Header from './Components/Header/index.jsx';
-import FlatsCard from './Components/FlatsCard'
+import FlatsCard from './Components/FlatsCard';
 import { data } from './Components/data/stays';
-import { useState } from 'react'
+import { useState } from 'react';
+
 
 function App() {
   const [state] = useState(data.rooms)
