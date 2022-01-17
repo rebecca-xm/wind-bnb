@@ -16,6 +16,14 @@
   padding: 16px 0;
   margin: 0 5px;
 
+  .host {
+    border: 1px solid black;
+    border-radius: 13px;
+    padding: 4px 6px;
+    color: black;
+    font-weight: bold;
+  }
+
   .card__descriptionContainer {
     display: flex;
     flex-wrap: wrap;
