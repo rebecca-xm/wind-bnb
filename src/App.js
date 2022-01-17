@@ -15,6 +15,7 @@ function App() {
           <FlatsCard
             key={flats.id}
             image={flats.photo}
+            superHost={flats.superHost}
             type={flats.type}
             beds={flats.beds}
             rating={flats.rating}
