@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.f031633d.css",
-    "main.js": "/static/js/main.5c3549e5.js",
-    "static/js/787.5f1c2d28.chunk.js": "/static/js/787.5f1c2d28.chunk.js",
-    "index.html": "/index.html",
-    "main.f031633d.css.map": "/static/css/main.f031633d.css.map",
-    "main.5c3549e5.js.map": "/static/js/main.5c3549e5.js.map",
-    "787.5f1c2d28.chunk.js.map": "/static/js/787.5f1c2d28.chunk.js.map"
+    "main.css": "/wind-bnb/static/css/main.f031633d.css",
+    "main.js": "/wind-bnb/static/js/main.f063b9ed.js",
+    "static/js/787.5f1c2d28.chunk.js": "/wind-bnb/static/js/787.5f1c2d28.chunk.js",
+    "index.html": "/wind-bnb/index.html",
+    "main.f031633d.css.map": "/wind-bnb/static/css/main.f031633d.css.map",
+    "main.f063b9ed.js.map": "/wind-bnb/static/js/main.f063b9ed.js.map",
+    "787.5f1c2d28.chunk.js.map": "/wind-bnb/static/js/787.5f1c2d28.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f031633d.css",
-    "static/js/main.5c3549e5.js"
+    "static/js/main.f063b9ed.js"
   ]
 }
