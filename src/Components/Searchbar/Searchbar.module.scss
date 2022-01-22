@@ -1,35 +1,54 @@
 .Searchbar{
-    display: wrap;
+
     display:flex;
-    align-items:flex-start;
     align-items:center;
     border-width: 2px;
-    border-radius:9999px;
+    background-color: white;
+    width: 100%;
+    // border-radius:9999px;
     padding:2px;
     padding-top:5px;
     padding-bottom:5px;
-    border: 2px solid lightgrey;
-    position: relative;
+    // border: 2px solid lightgrey;
+    position: fixed;
+    top: 0;
+    box-shadow:0 0 0 10000px rgba(0, 0, 0, 0.4);
 
-    .SearchbarInput{
+    .formSearch{
+        display: flex;
+        flex-direction: column;
+        
+
+        .locInp{
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 20px 50px;
+            padding: 30px;
+    
+    .searchbarInput{
 
         padding-left: 20px;
         position:relative;
         border: transparent;
-        
-        
     }
-        .searchIcon {
-            
-            height: 12px;
-            color:white;
-            background-color:rgb(219, 80, 80);
-           border-radius:50%;
-           padding: 5px;
-           cursor: pointer;
-           
-           position: relative;
         }
 
+        .btnCity{
+            background-color: transparent;
+            border: none;
+        }
+    
+        // .searchIcon {
+            
+        //     height: 12px;
+        //     color:white;
+        //     background-color:rgb(219, 80, 80);
+        //    border-radius:50%;
+        //    padding: 5px;
+        //    cursor: pointer;
+           
+        //    position: relative;
+        // }
+    }
     
 }

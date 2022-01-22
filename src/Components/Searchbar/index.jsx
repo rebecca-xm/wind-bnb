@@ -1,3 +1,4 @@
+import { useState,useEffect, setState } from 'react';
 import { data } from './../data/stays';
 import style from "./Searchbar.module.scss";
 
@@ -7,33 +8,39 @@ import style from "./Searchbar.module.scss";
 
 const Search = ({ cercaInput, handleCercaInput}) =>{
   
+const [cityInp, setCityInp] = useState("");
+
+// const cityInpi = `${cityInp}` + ", Finland" || null;
   
+  useEffect(() => { setCityInp() },[])
 
  
   return (
-    <div>
-    <form>
-      <label>Cerca:</label>
-      <select
-        value={cercaInput}
+    <div className={style.Searchbar}>
+    <form className={style.formSearch}>
+    <div className={style.locInp}>
+      <label>Location:</label> <br/>
+      <input
+        value={cityInp}
         onChange={handleCercaInput}
         type="text"
         name="cerca"
         id="cerca"
+        className={style.searchbarInput}
         placeholder="Search..."
-      >
-
-      <option value="">Tutti</option> 
-      {/* {data.rooms.filter((flats => flats.city))
+      />
+</div>
+      {data.rooms.filter((flats => flats.city))
         .map((flats)=> (
-      <option value={flats.city}>`{flats.city}, Finland`</option> 
-        ))} */}
-        <option value="Helsinki">Helsinki, Finland</option> 
-        <option value="Turku">Turku, Finland</option> 
-        <option value="Vaasa">Vaasa, Finland</option> 
-        <option value="Oulu">Oulu, Finland</option> 
+      <input className={style.btnCity} type="button" onClick={(e) => setCityInp(`${flats.city}`)} value={flats.city}/>
+        ))}
+        {/* <input onClick={() => setCityInp("Helsinki")} value="Helsinki"/> 
+        <input onClick={() => setCityInp("Turku")} value="Turku"/>
+        <input onClick={() => setCityInp("Vaasa")} value="Vaasa"/>
+        <input onClick={() => setCityInp("Oulu")} value="Oulu"/> */}
 
-      </select>
+      
+
       </form>
     </div>
   
