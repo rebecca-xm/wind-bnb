@@ -16,7 +16,6 @@ const Header = () => {
         alt="logo"
         width="150px"
       />
-      {/* <Search cercaInput={cercaInput} handleCercaInput={handleCercaInput} /> */}
     </div>
   );
 };
