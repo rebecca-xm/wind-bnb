@@ -2,6 +2,7 @@ import styles from './App.module.scss';
 import Header from './Components/Header/index.jsx';
 import FlatsCard from './Components/FlatsCard';
 import Search from "./Components/Searchbar/index";
+import Stays from "./Components/Stays/index";
 
 import { data } from './Components/data/stays';
 import { useState } from 'react';
@@ -16,7 +17,7 @@ function App() {
     <div className="App">
       <Header />
       <Search cercaInput={cercaInput} handleCercaInput={handleCercaInput} />
-      <h1>Stays in Finland</h1>
+      <Stays />
       <section className={styles.cardContainer}>
         {data.rooms.filter(flats => flats.city.toLowerCase().includes(cercaInput.toLowerCase()) || cercaInput === '')
         .map((flats)=> (
