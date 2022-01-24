@@ -34,6 +34,17 @@ const Search = ({ cercaInput, handleCercaInput, onClickNav }) => {
         <input onClick={() => setCityInp("Vaasa")} value="Vaasa"/>
         <input onClick={() => setCityInp("Oulu")} value="Oulu"/> */}
       </form>
+        <div >
+      <form className={style.formguest}>
+          <label>Guest</label>
+          <input
+            type="number"
+          />
+          <input
+            type="number"
+          />
+      </form>
+        </div>
     </div>
   );
 };
