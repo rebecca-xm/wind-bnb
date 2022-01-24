@@ -3,10 +3,7 @@ import { data } from "./../data/stays";
 import style from "./Searchbar.module.scss";
 
 const Search = ({ cercaInput, handleCercaInput, onClickNav }) => {
-  const buttonsName = data.map(({ city, country }) => ({
-    city,
-    country,
-  }));
+  const buttonsName = data.map((el) => el.city);
   const uniq = [...new Set(buttonsName)];
 
   return (
@@ -28,8 +25,8 @@ const Search = ({ cercaInput, handleCercaInput, onClickNav }) => {
           <input
             className={style.btnCity}
             type="button"
-            onClick={() => onClickNav(element.city)}
-            value={element.city}
+            onClick={() => onClickNav(element)}
+            value={element}
           />
         ))}
         {/* <input onClick={() => setCityInp("Helsinki")} value="Helsinki"/> 
