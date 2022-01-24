@@ -1,54 +1,50 @@
-.Searchbar{
+.Searchbar {
+  display: flex;
+  align-items: center;
+  border-width: 2px;
+  background-color: white;
+  width: 100%;
+  // border-radius:9999px;
+  padding: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  // border: 2px solid lightgrey;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.4);
+  // z-index: -1;
+  .formSearch {
+    display: flex;
+    flex-direction: column;
 
-    display:flex;
-    align-items:center;
-    border-width: 2px;
-    background-color: white;
-    width: 100%;
-    // border-radius:9999px;
-    padding:2px;
-    padding-top:5px;
-    padding-bottom:5px;
-    // border: 2px solid lightgrey;
-    position: fixed;
-    top: 0;
-    box-shadow:0 0 0 10000px rgba(0, 0, 0, 0.4);
-    z-index: -1;
-    .formSearch{
-        display: flex;
-        flex-direction: column;
-        
+    .locInp {
+      border: 1px solid black;
+      border-radius: 10px;
+      margin: 20px 50px;
+      padding: 30px;
 
-        .locInp{
-            border: 1px solid black;
-            border-radius: 10px;
-            margin: 20px 50px;
-            padding: 30px;
-    
-    .searchbarInput{
-
+      .searchbarInput {
         padding-left: 20px;
-        position:relative;
+        position: relative;
         border: transparent;
+      }
     }
-        }
 
-        .btnCity{
-            background-color: transparent;
-            border: none;
-        }
-    
-        // .searchIcon {
-            
-        //     height: 12px;
-        //     color:white;
-        //     background-color:rgb(219, 80, 80);
-        //    border-radius:50%;
-        //    padding: 5px;
-        //    cursor: pointer;
-           
-        //    position: relative;
-        // }
+    .btnCity {
+      background-color: transparent;
+      border: none;
     }
-    
+
+    // .searchIcon {
+
+    //     height: 12px;
+    //     color:white;
+    //     background-color:rgb(219, 80, 80);
+    //    border-radius:50%;
+    //    padding: 5px;
+    //    cursor: pointer;
+
+    //    position: relative;
+    // }
+  }
 }
