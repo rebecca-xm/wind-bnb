@@ -15,17 +15,17 @@ function App() {
   const [cercaInput, setCercaInput] = useState("");
   const [rooms, setRooms] = useState(data);
 
-  const handleCercaInput = (e) => setCercaInput(e.target.value);
+  // const handleCercaInput = (e) => setCercaInput(e.target.value);
 
-  useEffect(() => {
-    const search = data.filter(
-      (flats) =>
-        flats.city.toLowerCase().includes(cercaInput.toLowerCase()) ||
-        cercaInput === ""
-    );
+  // useEffect(() => {
+  //   const search = data.filter(
+  //     (flats) =>
+  //       flats.city.toLowerCase().includes(cercaInput.toLowerCase()) ||
+  //       cercaInput === ""
+  //   );
 
-    setRooms(search);
-  }, [cercaInput]);
+  //   setRooms(search);
+  // }, [cercaInput]);
 
   return (
     <div className="App">
@@ -34,8 +34,8 @@ function App() {
         cercaInput={cercaInput}
         handleCercaInput={handleCercaInput}
         onClickNav={setCercaInput}
-      /> */}
-      <Stays count={rooms.length} />
+      />  */}
+      {/* <Stays count={rooms.length} />
       <section className={styles.cardContainer}>
         {rooms.map((flats) => (
           <FlatsCard
@@ -49,7 +49,7 @@ function App() {
           />
         ))}
       </section>
-      <Stays count={rooms.length} />
+      <Stays count={rooms.length} /> */}
     </div>
   );
 }

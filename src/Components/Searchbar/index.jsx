@@ -1,13 +1,15 @@
 import { useState } from "react";
 import { data } from "./../data/stays";
+import { SearchIcon } from "@heroicons/react/solid";
+
 import styles from "./Searchbar.module.scss";
 
 const Search = ({ cercaInput, handleCercaInput, onClickNav }) => {
   const buttonsName = data.map((el) => el.city);
   const uniq = [...new Set(buttonsName)];
 
-  const [counterAdult, setCounterAdult] = useState(0)
-  const [counterChildren, setCounterChildren] = useState(0)
+  const [counterAdult, setCounterAdult] = useState(0);
+  const [counterChildren, setCounterChildren] = useState(0);
 
   // const handleCountPlus = setCounterAdult + 1;
 
@@ -39,7 +41,7 @@ const Search = ({ cercaInput, handleCercaInput, onClickNav }) => {
         <input onClick={() => setCityInp("Vaasa")} value="Vaasa"/>
         <input onClick={() => setCityInp("Oulu")} value="Oulu"/> */}
       </form>
-      <div >
+      <div>
         <form className={styles.formguest}>
           <div className={styles.gueInp}>
             <label>Guest</label>
@@ -57,11 +59,11 @@ const Search = ({ cercaInput, handleCercaInput, onClickNav }) => {
                 type="button"
                 className={styles.plusMin}
                 onClick={() => setCounterAdult(counterAdult - 1)}
-                disabled={counterAdult <= 0}>-</button>
-              <input
-                className={styles.inpFormAdCh}
-                value={counterAdult}
-              />
+                disabled={counterAdult <= 0}
+              >
+                -
+              </button>
+              <input className={styles.inpFormAdCh} value={counterAdult} />
               <button
                 type="button"
                 className={styles.plusMin}
@@ -79,11 +81,11 @@ const Search = ({ cercaInput, handleCercaInput, onClickNav }) => {
                 type="button"
                 className={styles.plusMin}
                 onClick={() => setCounterChildren(counterChildren - 1)}
-                disabled={counterChildren <= 0}>-</button>
-              <input
-                className={styles.inpFormAdCh}
-                value={counterChildren}
-              />
+                disabled={counterChildren <= 0}
+              >
+                -
+              </button>
+              <input className={styles.inpFormAdCh} value={counterChildren} />
               <button
                 type="button"
                 className={styles.plusMin}
@@ -92,6 +94,9 @@ const Search = ({ cercaInput, handleCercaInput, onClickNav }) => {
                 +
               </button>
             </div>
+          </div>
+          <div className={styles.Icona}>
+          <SearchIcon className={styles.searchIcon}  />
           </div>
         </form>
       </div>
