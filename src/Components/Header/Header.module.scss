@@ -15,7 +15,7 @@
     padding-top:5px;
     padding-bottom:5px;
     border: 2px solid lightgrey;
-    position: relative;
+    position:relative;
 
     .SearchbarInput{
 
@@ -38,4 +38,16 @@
         }
 
     
+}
+h1 {
+    margin-left: 20px;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+
+    column-gap: 20px;
+    row-gap: 10px;
+    margin: auto 4.8%;
 }

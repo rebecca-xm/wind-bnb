@@ -13,8 +13,9 @@
   // border: 2px solid lightgrey;
   position: fixed;
   top: 0;
-  box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.4);
-  // z-index: -1;
+  box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.4);
+  z-index: 5;
+  left: 0;
   .formSearch {
     display: flex;
     flex-direction: column;
@@ -36,17 +37,8 @@
       border: none;
     }
 
-    // .searchIcon {
 
-    //     height: 12px;
-    //     color:white;
-    //     background-color:rgb(219, 80, 80);
-    //    border-radius:50%;
-    //    padding: 5px;
-    //    cursor: pointer;
 
-    //    position: relative;
-    // }
   }
   .formguest {
       display: flex;
@@ -85,6 +77,32 @@
     .aduChi {
       display: flex;
       flex-direction: column;
+    }
+    .Icona {
+      display: wrap;
+      display:flex;
+      align-items:flex-start;
+      align-items:center;
+      border-width: 2px;
+      border-radius:9999px;
+      padding:2px;
+      padding-top:5px;
+      padding-bottom:5px;
+      border: 2px solid lightgrey;
+      position:relative;
+
+
+     .searchIcon {
+
+        height: 12px;
+        color:white;
+        background-color:rgb(219, 80, 80);
+       border-radius:50%;
+       padding: 5px;
+       cursor: pointer;
+
+       position: relative;
+     }
     }
   }
   
