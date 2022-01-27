@@ -30,11 +30,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Search
+      {/* <Search
         cercaInput={cercaInput}
         handleCercaInput={handleCercaInput}
         onClickNav={setCercaInput}
-      />
+      /> */}
       <Stays count={rooms.length} />
       <section className={styles.cardContainer}>
         {rooms.map((flats) => (
