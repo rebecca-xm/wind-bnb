@@ -16,16 +16,16 @@ const Header = () => {
         alt="logo"
         width="150px"
       />
-     <div className={style.Searchbar}>
-      <input className={style.SearchbarInput}
+     <div className={styles.Searchbar}>
+      <input className={styles.SearchbarInput}
         type="search"
         placeholder="Search..."
       />   
-       <input className={style.SearchbarInput}
+       <input className={styles.SearchbarInput}
         type="search"
         placeholder="Search..."
       />  
-      <SearchIcon className={style.searchIcon}/>
+      <SearchIcon className={styles.searchIcon}/>
     </div> 
     </div>
   );
