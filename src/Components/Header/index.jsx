@@ -1,5 +1,5 @@
 import logo from "./../Img/logo.png";
-import style from "./Header.module.scss";
+import styles from "./Header.module.scss";
 // import Search from "../Searchbar";
 import { useState } from "react";
 
@@ -10,7 +10,7 @@ const Header = () => {
   // const handleCercaInput = (e) => setCercaInput(e.target.value);
 
   return (
-    <div className={style.header}>
+    <div className={styles.header}>
       <img
         src={logo}
         alt="logo"

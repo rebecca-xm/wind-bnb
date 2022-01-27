@@ -1,6 +1,6 @@
-import { useState, useEffect, setState } from "react";
+import { useState } from "react";
 import { data } from "./../data/stays";
-import style from "./Searchbar.module.scss";
+import styles from "./Searchbar.module.scss";
 
 const Search = ({ cercaInput, handleCercaInput, onClickNav }) => {
   const buttonsName = data.map((el) => el.city);
@@ -11,11 +11,10 @@ const Search = ({ cercaInput, handleCercaInput, onClickNav }) => {
 
   // const handleCountPlus = setCounterAdult + 1;
 
-  
   return (
-    <div className={style.Searchbar}>
-      <form className={style.formSearch}>
-        <div className={style.locInp}>
+    <div className={styles.Searchbar}>
+      <form className={styles.formSearch}>
+        <div className={styles.locInp}>
           <label>Location:</label> <br />
           <input
             value={cercaInput}
@@ -23,14 +22,13 @@ const Search = ({ cercaInput, handleCercaInput, onClickNav }) => {
             type="text"
             name="cerca"
             id="cerca"
-            className={style.searchbarInput}
+            className={styles.searchbarInput}
             placeholder="Search..."
-
           />
         </div>
         {uniq.map((element) => (
           <input
-            className={style.btnCity}
+            className={styles.btnCity}
             type="button"
             onClick={() => onClickNav(element)}
             value={element}
@@ -42,52 +40,57 @@ const Search = ({ cercaInput, handleCercaInput, onClickNav }) => {
         <input onClick={() => setCityInp("Oulu")} value="Oulu"/> */}
       </form>
       <div >
-        <form className={style.formguest}>
-          <div className={style.gueInp}>
+        <form className={styles.formguest}>
+          <div className={styles.gueInp}>
             <label>Guest</label>
             <input
-              className={style.guestBarInput}
+              className={styles.guestBarInput}
               placeholder="Guest"
               value={counterAdult + counterChildren}
-
             />
           </div>
-          <div className={style.aduChi}>
+          <div className={styles.aduChi}>
             <label>Adult</label>
             <span>Ages 13 or above</span>
             <div>
-              <button 
-              type="button"
-              className={style.plusMin}
-              onClick={() => setCounterAdult(counterAdult - 1)}>-</button>
+              <button
+                type="button"
+                className={styles.plusMin}
+                onClick={() => setCounterAdult(counterAdult - 1)}
+                disabled={counterAdult <= 0}>-</button>
               <input
-              className={style.inpFormAdCh}
+                className={styles.inpFormAdCh}
                 value={counterAdult}
               />
-              <button 
-              type="button"
-              className={style.plusMin}
-              onClick={() => setCounterAdult(counterAdult + 1)}
-              >+</button>
+              <button
+                type="button"
+                className={styles.plusMin}
+                onClick={() => setCounterAdult(counterAdult + 1)}
+              >
+                +
+              </button>
             </div>
           </div>
-          <div className={style.aduChi}>
+          <div className={styles.aduChi}>
             <label>Children</label>
             <span>Ages 2-12</span>
             <div>
-              <button 
-              type="button"
-              className={style.plusMin}
-              onClick={() => setCounterChildren(counterChildren - 1)}>-</button>
+              <button
+                type="button"
+                className={styles.plusMin}
+                onClick={() => setCounterChildren(counterChildren - 1)}
+                disabled={counterChildren <= 0}>-</button>
               <input
-              className={style.inpFormAdCh}
-              value={counterChildren}
+                className={styles.inpFormAdCh}
+                value={counterChildren}
               />
               <button
-              type="button"
-              className={style.plusMin}
-              onClick={() => setCounterChildren(counterChildren + 1)}
->+</button>
+                type="button"
+                className={styles.plusMin}
+                onClick={() => setCounterChildren(counterChildren + 1)}
+              >
+                +
+              </button>
             </div>
           </div>
         </form>

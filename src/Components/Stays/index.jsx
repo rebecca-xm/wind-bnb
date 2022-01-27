@@ -1,5 +1,5 @@
-import Styled from "./stays.module.scss";
-import { useState, useEffect } from "react";
+// import styles from "./stays.module.scss";
+// import { useState, useEffect } from "react";
 
 const Stays = ({ count }) => {
   return (
