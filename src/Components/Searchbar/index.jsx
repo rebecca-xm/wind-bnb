@@ -4,7 +4,7 @@ import { SearchIcon } from "@heroicons/react/solid";
 
 import styles from "./Searchbar.module.scss";
 
-const Search = ({ cercaInput, handleCercaInput, onClickNav }) => {
+const Search = ({ cercaInput, handleCercaInput, onClickNav, offModal }) => {
   const buttonsName = data.map((el) => el.city);
   const uniq = [...new Set(buttonsName)];
 
@@ -96,7 +96,8 @@ const Search = ({ cercaInput, handleCercaInput, onClickNav }) => {
             </div>
           </div>
           <div className={styles.Icona}>
-          <SearchIcon className={styles.searchIcon}  />
+          <SearchIcon className={styles.searchIcon} 
+          onClick={offModal} />
           </div>
         </form>
       </div>
