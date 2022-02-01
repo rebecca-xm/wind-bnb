@@ -1,15 +1,25 @@
-import { useState } from "react";
 import { data } from "./../data/stays";
 import { SearchIcon } from "@heroicons/react/solid";
 
 import styles from "./Searchbar.module.scss";
 
-const Search = ({ cercaInput, handleCercaInput, onClickNav, offModal }) => {
+const Search = ({
+  cercaInput,
+  handleCercaInput,
+  onClickNav,
+  offModal,
+  allAdults,
+  allChildren,
+  adultsMinus,
+  adultsPlus,
+  childrenMinus,
+  childrenPlus
+}) => {
   const buttonsName = data.map((el) => el.city);
   const uniq = [...new Set(buttonsName)];
 
-  const [counterAdult, setCounterAdult] = useState(0);
-  const [counterChildren, setCounterChildren] = useState(0);
+  // const [counterAdult, setCounterAdult] = useState(0);
+  // const [counterChildren, setCounterChildren] = useState(0);
 
   // const handleCountPlus = setCounterAdult + 1;
 
@@ -36,10 +46,6 @@ const Search = ({ cercaInput, handleCercaInput, onClickNav, offModal }) => {
             value={element}
           />
         ))}
-        {/* <input onClick={() => setCityInp("Helsinki")} value="Helsinki"/> 
-        <input onClick={() => setCityInp("Turku")} value="Turku"/>
-        <input onClick={() => setCityInp("Vaasa")} value="Vaasa"/>
-        <input onClick={() => setCityInp("Oulu")} value="Oulu"/> */}
       </form>
       <div>
         <form className={styles.formguest}>
@@ -48,7 +54,7 @@ const Search = ({ cercaInput, handleCercaInput, onClickNav, offModal }) => {
             <input
               className={styles.guestBarInput}
               placeholder="Guest"
-              value={counterAdult + counterChildren}
+              value={allAdults + allChildren}
             />
           </div>
           <div className={styles.aduChi}>
@@ -58,16 +64,16 @@ const Search = ({ cercaInput, handleCercaInput, onClickNav, offModal }) => {
               <button
                 type="button"
                 className={styles.plusMin}
-                onClick={() => setCounterAdult(counterAdult - 1)}
-                disabled={counterAdult <= 0}
+                onClick={adultsMinus}
+                disabled={allAdults <= 0}
               >
                 -
               </button>
-              <input className={styles.inpFormAdCh} value={counterAdult} />
+              <input className={styles.inpFormAdCh} value={allAdults} />
               <button
                 type="button"
                 className={styles.plusMin}
-                onClick={() => setCounterAdult(counterAdult + 1)}
+                onClick={adultsPlus}
               >
                 +
               </button>
@@ -80,24 +86,24 @@ const Search = ({ cercaInput, handleCercaInput, onClickNav, offModal }) => {
               <button
                 type="button"
                 className={styles.plusMin}
-                onClick={() => setCounterChildren(counterChildren - 1)}
-                disabled={counterChildren <= 0}
+                onClick={childrenMinus}
+                disabled={allChildren <= 0}
               >
                 -
               </button>
-              <input className={styles.inpFormAdCh} value={counterChildren} />
+              <input className={styles.inpFormAdCh} value={allChildren} />
               <button
                 type="button"
                 className={styles.plusMin}
-                onClick={() => setCounterChildren(counterChildren + 1)}
+                onClick={childrenPlus}
               >
                 +
               </button>
             </div>
           </div>
           <div className={styles.Icona}>
-          <SearchIcon className={styles.searchIcon} 
-          onClick={offModal} />
+            <SearchIcon className={styles.searchIcon}
+              onClick={offModal} />
           </div>
         </form>
       </div>
