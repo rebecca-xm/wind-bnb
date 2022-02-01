@@ -1,23 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { data } from "./../data/stays";
 import { SearchIcon } from "@heroicons/react/solid";
 
 import styles from "./Searchbar.module.scss";
 
-const Search = ({
-  cercaInput,
-  handleCercaInput,
-  onClickNav,
-  offModal,
-  hanldeGuestNum,
-}) => {
+const Search = ({ cercaInput, handleCercaInput, onClickNav, offModal, adultiM, adultiP, bambiniM, bambiniP, totAdult, totChild }) => {
   const buttonsName = data.map((el) => el.city);
-  const uniq = [...new Set(buttonsName)];
-  const guestSet = data.map((el) => el.maxGuests);
-  const uniqG = [...new Set(guestSet)];
 
-  const [counterAdult, setCounterAdult] = useState(0);
-  const [counterChildren, setCounterChildren] = useState(0);
+  const uniq = [...new Set(buttonsName)];
+
+
+
+
+
+
 
   // const handleCountPlus = setCounterAdult + 1;
 
@@ -44,19 +40,18 @@ const Search = ({
             value={element}
           />
         ))}
+        
       </form>
       <div>
         <form className={styles.formguest}>
           <div className={styles.gueInp}>
             <label>Guest</label>
-            {uniqG.map((element) => (
-              <input
-                className={styles.guestBarInput}
-                placeholder="Guest"
-                onChange={hanldeGuestNum}
-                value={counterAdult + counterChildren}
-              />
-            ))}
+            <input
+              
+              className={styles.guestBarInput}
+              placeholder="Guest"
+              value={totAdult + totChild}
+            />
           </div>
           <div className={styles.aduChi}>
             <label>Adult</label>
@@ -65,16 +60,16 @@ const Search = ({
               <button
                 type="button"
                 className={styles.plusMin}
-                onClick={() => setCounterAdult(counterAdult - 1)}
-                disabled={counterAdult <= 0}
+                onClick={adultiM}
+                disabled={totAdult <= 0}
               >
                 -
               </button>
-              <input className={styles.inpFormAdCh} value={counterAdult} />
+              <input className={styles.inpFormAdCh} value={totAdult} />
               <button
                 type="button"
                 className={styles.plusMin}
-                onClick={() => setCounterAdult(counterAdult + 1)}
+                onClick={adultiP}
               >
                 +
               </button>
@@ -87,23 +82,24 @@ const Search = ({
               <button
                 type="button"
                 className={styles.plusMin}
-                onClick={() => setCounterChildren(counterChildren - 1)}
-                disabled={counterChildren <= 0}
+                onClick={bambiniM}
+                disabled={totChild <= 0}
               >
                 -
               </button>
-              <input className={styles.inpFormAdCh} value={counterChildren} />
+              <input className={styles.inpFormAdCh} value={totChild} />
               <button
                 type="button"
                 className={styles.plusMin}
-                onClick={() => setCounterChildren(counterChildren + 1)}
+                onClick={bambiniP}
               >
                 +
               </button>
             </div>
           </div>
           <div className={styles.Icona}>
-            <SearchIcon className={styles.searchIcon} onClick={offModal} />
+          <SearchIcon className={styles.searchIcon} 
+          onClick={offModal} />
           </div>
         </form>
       </div>

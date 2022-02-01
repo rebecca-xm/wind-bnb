@@ -9,9 +9,11 @@ import { useState, useEffect } from "react";
 function App() {
   const [cercaInput, setCercaInput] = useState("");
   const [rooms, setRooms] = useState(data);
-  const [guest, setCercaGuestNum] = useState(data);
+
+  const [counterAdult, setCounterAdult] = useState(0);
+  const [counterChildren, setCounterChildren] = useState(0);
+
   const handleCercaInput = (e) => setCercaInput(e.target.value);
-  const hanldeGuestNum = (e) => setCercaGuestNum(e.target.value);
   const [isModalShown, setModalShown] = useState(false);
 
   const handleModal = () => {
@@ -22,18 +24,23 @@ function App() {
     setModalShown(false);
   };
 
+  // const sumAdCh = counterAdult + counterChildren;
+  
   useEffect(() => {
     const search = data.filter(
       (flats) =>
         flats.city.toLowerCase().includes(cercaInput.toLowerCase()) ||
-        cercaInput === ""
-        &&
-        flats.maxGuests.toLowerCase().includes(guest.parseInt()) ||
-      guest === "",
+        cercaInput === "" && flats.maxGuests >= (counterAdult + counterChildren)
     );
+    // const searchG = data.filter(
+    //   (flats) =>
+    //   flats.maxGuests>=(sumAdCh)
+    // );
 
     setRooms(search);
-  }, [cercaInput, guest]);
+    console.log(search);
+  }, [cercaInput, counterAdult, counterChildren]);
+
 
   return (
     <div className="App">
@@ -43,9 +50,14 @@ function App() {
           <Search
             cercaInput={cercaInput}
             handleCercaInput={handleCercaInput}
-            hanldeGuestNum={hanldeGuestNum}
             onClickNav={setCercaInput}
             offModal={closeModal}
+            adultiM={() => setCounterAdult(counterAdult - 1)}
+            adultiP={() => setCounterAdult(counterAdult + 1)}
+            bambiniM={() => setCounterChildren(counterChildren - 1)}
+            bambiniP={() => setCounterChildren(counterChildren + 1)}
+            totAdult={counterAdult}
+            totChild={counterChildren}
           />
         )}
       </div>
