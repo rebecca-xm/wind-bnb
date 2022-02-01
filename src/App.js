@@ -9,8 +9,9 @@ import { useState, useEffect } from "react";
 function App() {
   const [cercaInput, setCercaInput] = useState("");
   const [rooms, setRooms] = useState(data);
-
+  const [guest, setCercaGuestNum] = useState(data);
   const handleCercaInput = (e) => setCercaInput(e.target.value);
+  const hanldeGuestNum = (e) => setCercaGuestNum(e.target.value);
   const [isModalShown, setModalShown] = useState(false);
 
   const handleModal = () => {
@@ -26,10 +27,13 @@ function App() {
       (flats) =>
         flats.city.toLowerCase().includes(cercaInput.toLowerCase()) ||
         cercaInput === ""
+        &&
+        flats.maxGuests.toLowerCase().includes(guest.parseInt()) ||
+      guest === "",
     );
 
     setRooms(search);
-  }, [cercaInput]);
+  }, [cercaInput, guest]);
 
   return (
     <div className="App">
@@ -39,6 +43,7 @@ function App() {
           <Search
             cercaInput={cercaInput}
             handleCercaInput={handleCercaInput}
+            hanldeGuestNum={hanldeGuestNum}
             onClickNav={setCercaInput}
             offModal={closeModal}
           />

@@ -4,9 +4,17 @@ import { SearchIcon } from "@heroicons/react/solid";
 
 import styles from "./Searchbar.module.scss";
 
-const Search = ({ cercaInput, handleCercaInput, onClickNav, offModal }) => {
+const Search = ({
+  cercaInput,
+  handleCercaInput,
+  onClickNav,
+  offModal,
+  hanldeGuestNum,
+}) => {
   const buttonsName = data.map((el) => el.city);
   const uniq = [...new Set(buttonsName)];
+  const guestSet = data.map((el) => el.maxGuests);
+  const uniqG = [...new Set(guestSet)];
 
   const [counterAdult, setCounterAdult] = useState(0);
   const [counterChildren, setCounterChildren] = useState(0);
@@ -36,20 +44,19 @@ const Search = ({ cercaInput, handleCercaInput, onClickNav, offModal }) => {
             value={element}
           />
         ))}
-        {/* <input onClick={() => setCityInp("Helsinki")} value="Helsinki"/> 
-        <input onClick={() => setCityInp("Turku")} value="Turku"/>
-        <input onClick={() => setCityInp("Vaasa")} value="Vaasa"/>
-        <input onClick={() => setCityInp("Oulu")} value="Oulu"/> */}
       </form>
       <div>
         <form className={styles.formguest}>
           <div className={styles.gueInp}>
             <label>Guest</label>
-            <input
-              className={styles.guestBarInput}
-              placeholder="Guest"
-              value={counterAdult + counterChildren}
-            />
+            {uniqG.map((element) => (
+              <input
+                className={styles.guestBarInput}
+                placeholder="Guest"
+                onChange={hanldeGuestNum}
+                value={counterAdult + counterChildren}
+              />
+            ))}
           </div>
           <div className={styles.aduChi}>
             <label>Adult</label>
@@ -96,8 +103,7 @@ const Search = ({ cercaInput, handleCercaInput, onClickNav, offModal }) => {
             </div>
           </div>
           <div className={styles.Icona}>
-          <SearchIcon className={styles.searchIcon} 
-          onClick={offModal} />
+            <SearchIcon className={styles.searchIcon} onClick={offModal} />
           </div>
         </form>
       </div>
