@@ -1,6 +1,6 @@
 .Searchbar {
   display: flex;
-  align-items: center;
+  // align-items: center;
   border-width: 2px;
   background-color: white;
   width: 100%;
@@ -19,48 +19,80 @@
   .formSearch {
     display: flex;
     flex-direction: column;
+    margin-left: 10vh;
+    margin-bottom: 5rem;
 
     .locInp {
       border: 1px solid black;
       border-radius: 10px;
-      margin: 20px 50px;
-      padding: 30px;
+      // margin: 20px 50px;
+      padding: 0.5rem 14rem 0rem 1.5rem ;
+      height: 3rem;
+      margin-bottom: 1rem;
+      
+
 
       .searchbarInput {
         position: relative;
         border: transparent;
       }
     }
+    
+    .divCity{
+      margin-left: 1.5rem;
+      margin-top: 0.5rem;
+
+    .iconMap{
+      width: 1.2rem;
+
+    }
 
     .btnCity {
       background-color: transparent;
       border: none;
-    }
+      color: rgb(47, 47, 47);
+      font-size: 1rem;
+      padding: 0.5rem;
+      cursor: pointer;
 
-
+      }  
+    }  
 
   }
   .formguest {
       display: flex;
       flex-direction: column;
+      
       gap: 1rem;
 
+    .label {
+      font-weight: bold;
+    }
+
+    span{
+      color: gray;
+    }
+    
       .gueInp{
         display: flex;
         flex-direction: column;
         border: 1px solid black;
         border-radius: 10px;
         // margin: 20px 50px;
-        padding: 30px;
+        padding: 0.5rem 14rem 0rem 1.5rem ;
+        height: 3rem;
+
+        
 
         .guestBarInput{
           position: relative;
           border: transparent;
+          
         }
       }
     }
     .inpFormAdCh{
-      width: 1rem;
+      width: 2rem;
       text-align: center;
       border: none;
       font-weight: bold;
@@ -77,33 +109,39 @@
     .aduChi {
       display: flex;
       flex-direction: column;
+      margin-top: 0.5rem;
+      margin-left: 1rem;
+
     }
-    .Icona {
-      display: wrap;
-      display:flex;
-      align-items:flex-start;
-      align-items:center;
-      border-width: 2px;
-      border-radius:9999px;
-      padding:2px;
-      padding-top:5px;
-      padding-bottom:5px;
-      border: 2px solid lightgrey;
-      position:relative;
+    
+  }
+  .Icona {
+    // display: wrap;
+    // display:flex;
+    // align-items:flex-start;
+    // align-items:center;
+    height: 3.4rem;
+    padding: 0.2rem 8rem 0 8rem ;
+
+    border-width: 2px;
+    border-radius:10px;
+    
+    border: 2px solid lightgrey;
+    position:relative;
 
 
-     .searchIcon {
 
-        height: 12px;
-        color:white;
-        background-color:rgb(219, 80, 80);
-       border-radius:50%;
-       padding: 5px;
-       cursor: pointer;
+   .searchIcon {
+      height: 2.6rem;
+      width: 6rem;
+      color:white;
+      background-color:rgb(219, 80, 80);
+     border-radius:10px;
+     padding: 5px;
+     cursor: pointer;
 
-       position: relative;
-     }
-    }
+     position: relative;
+   }
   }
   
   

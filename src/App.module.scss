@@ -5,8 +5,9 @@ h1 {
 .cardContainer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 
-    column-gap: 20px;
+    column-gap: 2.5rem;
     row-gap: 10px;
-    margin: auto 4.8%;
+    // margin: auto 4.8%;
 }
