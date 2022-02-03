@@ -1,16 +1,13 @@
 .Searchbar {
   display: flex;
-  // align-items: center;
   border-width: 2px;
   background-color: white;
   width: 100%;
   height: auto;
   max-height: 40%;
-  // border-radius:9999px;
   padding: 2px;
-  padding-top: 5px;
+  padding-top: 5vh;
   padding-bottom: 5px;
-  // border: 2px solid lightgrey;
   position: fixed;
   top: 0;
   box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.4);
@@ -25,8 +22,7 @@
     .locInp {
       border: 1px solid black;
       border-radius: 10px;
-      // margin: 20px 50px;
-      padding: 0.5rem 14rem 0rem 1.5rem ;
+      padding: 0.2rem 18rem 0rem 1.5rem ;
       height: 3rem;
       margin-bottom: 1rem;
       
@@ -79,7 +75,7 @@
         border: 1px solid black;
         border-radius: 10px;
         // margin: 20px 50px;
-        padding: 0.5rem 14rem 0rem 1.5rem ;
+        padding: 0.2rem 18rem 0rem 1.5rem ;
         height: 3rem;
 
         
@@ -120,8 +116,8 @@
     // display:flex;
     // align-items:flex-start;
     // align-items:center;
-    height: 3.4rem;
-    padding: 0.2rem 8rem 0 8rem ;
+    height: 3rem;
+    padding: 0.1rem 10rem 0 10rem ;
 
     border-width: 2px;
     border-radius:10px;
@@ -132,7 +128,7 @@
 
 
    .searchIcon {
-      height: 2.6rem;
+      height: 2.2rem;
       width: 6rem;
       color:white;
       background-color:rgb(219, 80, 80);
