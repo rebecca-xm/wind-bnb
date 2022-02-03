@@ -18,6 +18,8 @@ const Search = ({
   const buttonsName = data.map((el) => el.city);
   const uniq = [...new Set(buttonsName)];
 
+
+
   // const [counterAdult, setCounterAdult] = useState(0);
   // const [counterChildren, setCounterChildren] = useState(0);
 
@@ -39,12 +41,15 @@ const Search = ({
           />
         </div>
         {uniq.map((element) => (
+          <div className={styles.divCity}>
+          <img className={styles.iconMap} src="https://img.icons8.com/external-kmg-design-glyph-kmg-design/32/000000/external-map-back-to-school-kmg-design-glyph-kmg-design.png"/>
           <input
             className={styles.btnCity}
             type="button"
             onClick={() => onClickNav(element)}
             value={element}
           />
+          </div>
         ))}
       </form>
       <div>
@@ -53,12 +58,11 @@ const Search = ({
             <label>Guest</label>
             <input
               className={styles.guestBarInput}
-              placeholder="Guest"
               value={allAdults + allChildren}
             />
           </div>
           <div className={styles.aduChi}>
-            <label>Adult</label>
+            <label className={styles.label}>Adult</label>
             <span>Ages 13 or above</span>
             <div>
               <button
@@ -80,7 +84,7 @@ const Search = ({
             </div>
           </div>
           <div className={styles.aduChi}>
-            <label>Children</label>
+            <label className={styles.label}>Children</label>
             <span>Ages 2-12</span>
             <div>
               <button
@@ -101,12 +105,15 @@ const Search = ({
               </button>
             </div>
           </div>
-          <div className={styles.Icona}>
-            <SearchIcon className={styles.searchIcon}
-              onClick={offModal} />
-          </div>
         </form>
       </div>
+          <div className={styles.Icona}>
+            
+
+            <SearchIcon className={styles.searchIcon}
+              onClick={offModal} />
+            
+          </div>
     </div>
   );
 };
