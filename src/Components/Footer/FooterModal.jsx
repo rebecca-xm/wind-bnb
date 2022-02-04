@@ -28,14 +28,14 @@ const FooterModal = ({ closeFootModal }) => {
             <p>Front-end Developer</p>
             <div className={styles.containerLinks}>
               <div className={styles.linkLinkedin}>
-                <a href="https://www.linkedin.com/in/floriana-domianello" target="_blank" rel="noopener">
+                <a href="https://www.linkedin.com/in/floriana-domianello" target="_blank" rel="noreferrer">
                   <img className={styles.imgLinkedin}
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Antu_linkedin.svg/512px-Antu_linkedin.svg.png"
                     alt="linkedin" />
                 </a>
               </div>
               <div className={styles.GitHub}>
-                <a href="https://github.com/floriana83" target="_blank" rel="noopener">
+                <a href="https://github.com/floriana83" target="_blank" rel="noreferrer">
                   <img className={styles.imgGitHub}
                     src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Font_Awesome_5_brands_github-square.svg"
                     alt="github" />
@@ -52,13 +52,13 @@ const FooterModal = ({ closeFootModal }) => {
             <p>Front-end Developer</p>
             <div className={styles.containerLinks}>
               <div className={styles.linkLinkedin}>
-                <a href="https://www.linkedin.com/in/messina-marco" target="_blank" rel="noopener">
+                <a href="https://www.linkedin.com/in/messina-marco" target="_blank" rel="noreferrer">
                   <img className={styles.imgLinkedin}
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Antu_linkedin.svg/512px-Antu_linkedin.svg.png"
                     alt="linkedin" />
                 </a>
               </div>
-              <a href="https://github.com/Voldrak" target="_blank" rel="noopener">
+              <a href="https://github.com/Voldrak" target="_blank" rel="noreferrer">
                 <div className={styles.GitHub}>
                   <img className={styles.imgGitHub}
                     src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Font_Awesome_5_brands_github-square.svg" alt="github" /></div>
@@ -73,14 +73,14 @@ const FooterModal = ({ closeFootModal }) => {
             <p>Front-end Developer</p>
             <div className={styles.containerLinks}>
               <div className={styles.linkLinkedin}>
-                <a href="https://www.linkedin.com/in/rebecca-mollica" target="_blank" rel="noopener">
+                <a href="https://www.linkedin.com/in/rebecca-mollica" target="_blank" rel="noreferrer">
                   <img className={styles.imgLinkedin}
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Antu_linkedin.svg/512px-Antu_linkedin.svg.png"
                     alt="linkedin" />
                 </a>
               </div>
               <div className={styles.GitHub}>
-                <a href="https://github.com/rebecca-xm" target="_blank" rel="noopener">
+                <a href="https://github.com/rebecca-xm" target="_blank" rel="noreferrer">
                 <img className={styles.imgGitHub}
                   src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Font_Awesome_5_brands_github-square.svg"
                   alt="github" />
@@ -96,14 +96,14 @@ const FooterModal = ({ closeFootModal }) => {
             <p>Front-end Developer</p>
             <div className={styles.containerLinks}>
               <div className={styles.linkLinkedin}>
-                <a href="https://www.linkedin.com/in/miriana-maranzano-52559a167" target="_blank" rel="noopener">
+                <a href="https://www.linkedin.com/in/miriana-maranzano-52559a167" target="_blank" rel="noreferrer">
                   <img className={styles.imgLinkedin}
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Antu_linkedin.svg/512px-Antu_linkedin.svg.png"
                     alt="linkedin" />
                 </a>
               </div>
               <div className={styles.GitHub}>
-                <a href="https://github.com/MirMara" target="_blank" rel="noopener">
+                <a href="https://github.com/MirMara" target="_blank" rel="noreferrer">
                   <img className={styles.imgGitHub}
                     src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Font_Awesome_5_brands_github-square.svg"
                     alt="github" />
@@ -120,13 +120,13 @@ const FooterModal = ({ closeFootModal }) => {
             <p>Front-end Developer</p>
             <div className={styles.containerLinks}>
               <div className={styles.linkLinkedin}>
-                <a href="https://www.linkedin.com/in/fabrizio-cottone-developer" target="_blank" rel="noopener">
+                <a href="https://www.linkedin.com/in/fabrizio-cottone-developer" target="_blank" rel="noreferrer">
                   <img className={styles.imgLinkedin}
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Antu_linkedin.svg/512px-Antu_linkedin.svg.png"
                     alt="linkedin" /></a>
               </div>
               <div className={styles.GitHub}>
-                <a href="https://github.com/Fablizio" target="_blank" rel="noopener">
+                <a href="https://github.com/Fablizio" target="_blank" rel="noreferrer">
                   <img className={styles.imgGitHub}
                     src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Font_Awesome_5_brands_github-square.svg"
                     alt="github" />
