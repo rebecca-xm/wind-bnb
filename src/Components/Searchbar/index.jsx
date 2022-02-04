@@ -42,7 +42,7 @@ const Search = ({
         </div>
         {uniq.map((element) => (
           <div className={styles.divCity}>
-          <img className={styles.iconMap} src="https://img.icons8.com/external-kmg-design-glyph-kmg-design/32/000000/external-map-back-to-school-kmg-design-glyph-kmg-design.png"/>
+          <img className={styles.iconMap} alt="" src="https://img.icons8.com/external-kmg-design-glyph-kmg-design/32/000000/external-map-back-to-school-kmg-design-glyph-kmg-design.png"/>
           <input
             className={styles.btnCity}
             type="button"

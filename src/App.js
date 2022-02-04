@@ -66,7 +66,7 @@ function App() {
             />
           ))}
         </section>
-        <Stays count={rooms.length} />
+       
       </div>
     </div>
   );
