@@ -12,7 +12,7 @@ const CardDescription = ({superHost, type, title, beds, rating }) => {
   return (
     <div className={styles.card_description}>
       <div className={styles.card__descriptionContainer}>
-        <span className={styles.info}>{superHost} {type} . {beds} beds</span>
+        <span className={styles.info}>{superHost} {type} {beds > 0 && <>. {beds} beds</>}</span>
         <div className={styles.ratingWrapper}>
           <span className={styles.rating}>⭐{rating}</span>
         </div>
