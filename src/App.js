@@ -62,8 +62,8 @@ function App() {
           />
         )}
       </div>
-
-      <div onClick={closeModal, closeFootModal}>
+<div onClick={closeModal}>
+      <div onClick={closeFootModal}>
         <Stays count={rooms.length} />
         <section className={styles.cardContainer}>
           {rooms.map((flats) => (
@@ -83,6 +83,7 @@ function App() {
 
       <Footer handleHermitModal={handleHermitModal}/>
       {isfootmod && (<FooterModal closeFootModal={closeFootModal} />)}
+    </div>
     </div>
   );
 }
