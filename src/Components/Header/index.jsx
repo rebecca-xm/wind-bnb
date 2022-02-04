@@ -5,7 +5,7 @@ import { SearchIcon } from "@heroicons/react/solid";
 const Header = ({ onClickMod }) => {
   return (
     <div className={styles.header}>
-      <img src={logo} alt="logo" width="150px" />
+     <a href="/"> <img src={logo} alt="logo" width="150px" /></a>
       <div className={styles.Searchbar}>
         <input
           className={styles.SearchbarInput}
