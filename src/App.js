@@ -2,7 +2,9 @@ import styles from "./App.module.scss";
 import Header from "./Components/Header/index.jsx";
 import FlatsCard from "./Components/FlatsCard";
 import Search from "./Components/Searchbar/index";
+import FooterModal from "./Components/Footer/FooterModal";
 import Stays from "./Components/Stays/index";
+import Footer from "./Components/Footer/index";
 import { data } from "./Components/data/stays";
 import { useState, useEffect } from "react";
 
@@ -13,12 +15,22 @@ function App() {
   const [counterChildren, setCounterChildren] = useState(0);
   const handleCercaInput = (e) => setCercaInput(e.target.value);
 
+  //MODAL SEARCH BAR
   const [isModalShown, setModalShown] = useState(false);
   const handleModal = () => {
     setModalShown(true);
-  };
+  };    
   const closeModal = () => {
     setModalShown(false);
+  };
+
+//MODAL FOOTER
+  const [isfootmod, setisfootmod] = useState(false);
+  const handleHermitModal = () => {
+    setisfootmod(true);
+  };
+  const closeFootModal = () => {
+    setisfootmod(false);
   };
 
   useEffect(() => {
@@ -51,7 +63,7 @@ function App() {
         )}
       </div>
 
-      <div onClick={closeModal}>
+      <div onClick={closeModal, closeFootModal}>
         <Stays count={rooms.length} />
         <section className={styles.cardContainer}>
           {rooms.map((flats) => (
@@ -68,6 +80,9 @@ function App() {
         </section>
         <Stays count={rooms.length} />
       </div>
+
+      <Footer handleHermitModal={handleHermitModal}/>
+      {isfootmod && (<FooterModal closeFootModal={closeFootModal} />)}
     </div>
   );
 }
