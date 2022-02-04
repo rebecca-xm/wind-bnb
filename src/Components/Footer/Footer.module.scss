@@ -1,0 +1,30 @@
+.footerModal {
+    display: flex;
+    position: Fixed;
+    width: 40vw;
+    height: 40vh;
+    background-color:white;
+    top: 30vh;
+    left: 50vw;
+    z-index: 1;
+    border-radius:20px;
+    box-shadow:0 0 0 200vh rgba(0, 0, 0, 0.5);
+
+.imgModal {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+}
+
+
+.Footer {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    .Hermits {
+    cursor: pointer;
+    text-decoration: underline;
+}
+}
+
