@@ -1,30 +1,106 @@
 .footerModal {
-    display: flex;
-    position: Fixed;
+    position: fixed;
     width: 40vw;
-    height: 40vh;
+    height: 50vh;
     background-color:white;
-    top: 30vh;
-    left: 50vw;
+    top: 25vh;
+    left: 30vw;
     z-index: 1;
     border-radius:20px;
     box-shadow:0 0 0 200vh rgba(0, 0, 0, 0.5);
+.headerMod{
+    display: flex;
 
+    .titleMod{
+        width: 100%;
+        text-align: center;
+    }
+
+  
+}
+.membri{
+    display: flex;
+    justify-content:center;
+    gap: 2rem;
+
+    
+.membro{
+    text-align: center;
+    width: 150px;
+    height: 340px;
+    margin-top: 3.5rem;
+    transition: all 0.35s;
+    
+    .nomeMembro{
+        font-size: 15.5px;
+        font-weight: bold;
+    }
+
+    .containerDescMod{
+            font-size: 14px;
+            overflow: hidden;
+            max-height: 0px;
+            .containerLinks{
+                display: flex;
+                justify-content: space-around;
+                margin-top: 3.7rem;
+                .imgLinkedin{
+                    width: 3.4rem;
+                }
+                 .imgGitHub{
+                    width: 3.3rem;
+                    transform:translateY(-3px)
+                }
+                
+            }
+        }
+    
+ .membroImg{
+    width: 70px;
+        border-radius: 50%;
+        transform: scale(1.5)
+ }
+ &:hover{
+    height: 280px;
+    background-color: rgb(235, 232, 232);
+    transform:translateY(-40px) ;
+    
+
+     .membroImg{
+     transform: scale(1);
+    }
+
+    .containerDescMod{
+        overflow: visible;
+    max-height: none;
+    }
+        }
+        
+    }
+ }
+ .imgCloseMod{
+    width: 100%;
+    text-align: center;
 .imgModal {
-    width: 200px;
-    height: 200px;
-    cursor: pointer;
-}
-}
+width: 200px;
+height: 200px;
+cursor: pointer;
 
+}
+}
+}
 
 .Footer {
     position: relative;
     text-align: center;
     background-color: white;
-    .Hermits {
-    cursor: pointer;
-    text-decoration: underline;
+    margin: 5vh 0;
+    font-size: 1.5rem ;
+        .Hermits {
+            cursor: pointer;
+            text-decoration: underline;
+            color: coral;
 }
+
 }
 
