@@ -4,7 +4,9 @@
 ### Overview
 
 
-![This is an image](./example.gif)
+<p align="center">
+  <img src="./example.gif" alt="example"/>
+</p>
 
 
 
@@ -18,7 +20,24 @@
 
 **this will install all the library you need for run it properly**
 
-**For this App we use react.js SASS**
+<h2>Technologies used</h2>
+  <ul>
+    <li>HTML</li>
+    <li>SASS</li>
+    <li>Javascript</li>
+    <li>React.js</li>
+    <li>Made with ❤️</li>
+  </ul>
+
+  <br>
+
+<h2>Features</h2>
+<ol>
+  <li>Designed from zero</li>
+  <li>Mobile First Design</li>
+  <li>SEO optimized</li>
+  <li>Performance oriented</li>
+</ol>
 
 **This is a list of all the Funcionality**
 
@@ -28,4 +47,31 @@
 - All the features are interactive and dynamic!
 
 
-
+<h3>Made by</h3>
+<ul>
+  <li>
+    <a href="https://github.com/rebecca-xm">
+      Rebecca Mollica
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/floriana83">
+      Floriana Domianello
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/MirMara">
+      Miriana Maranzano
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/Voldrak">
+      Marco Messina
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/Fablizio">
+      Fabrizio Cottone
+    </a>
+  </li>
+</ul>
