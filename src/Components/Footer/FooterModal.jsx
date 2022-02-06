@@ -15,11 +15,12 @@ const[hermit]  = useState(team)
         </div>
         
       </div>
+      
       <form className={styles.membri}>
       {hermit.map((person) => (
         <section className={styles.membro}>
-          <img className={styles.membroImg} src={person.photo} alt="floriana" />
-          <p className={styles.nomeMembro}>{person.name}</p>
+         <div><img className={styles.membroImg} src={person.photo} alt="membro-team" /></div> 
+          <div><p className={styles.nomeMembro}>{person.name}</p></div>
           <div className={styles.containerDescMod}>
             <p>{person.sector}</p>
             <div className={styles.containerLinks}>
