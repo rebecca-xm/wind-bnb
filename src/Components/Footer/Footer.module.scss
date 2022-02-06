@@ -1,7 +1,7 @@
 .footerModal {
     position: fixed;
     width: 52vw;
-    height: 75vh;
+    height: 50vh;
     background-color:white;
     top: 10vh;
     left: 30vw;
@@ -21,14 +21,14 @@
 .membri{
     display: flex;
     justify-content:center;
-    gap: 2rem;
-    margin: 0 2rem;
+    // gap: 2vw;
+    margin: 0 1.5vw;
     width: 50vw;
 .membro{
     text-align: center;
     width: 18vw;
-    height: 15vh;
-    margin-top: 3.5rem;
+    height: 5vh;
+    margin-top: 4vh;
     transition: all 0.35s;
 
     .nomeMembro{
@@ -56,12 +56,12 @@
         }
 
  .membroImg{
-    width: 70px;
+    width: 3vw;
         border-radius: 50%;
         transform: scale(1.5)
  }
  &:hover{
-    height: 40vh;
+    height: 25vh;
     background-color: rgb(235, 232, 232);
     transform:translateY(-5vh) ;
 
@@ -77,19 +77,26 @@
 
     }
  }
- .imgCloseMod{
-    width: 100%;
-    position:fixed;
+//  .imgCloseMod{
+    // width: 100vw;
+    // position:fixed;
+    // display: flex;
+    // padding-top: 15vh;
     // top: 10vh;
-    left: 51.5vw;
-    bottom: 15vh;
-.imgModal {
+    // left: 51.5vw;
+    // bottom: 15vh;
+    
+    
+    .imgModal {
+        position: fixed;
+    bottom: 40vh;
+    left: 53.7vw;
 width: 150px;
 height: 150px;
 cursor: pointer;
 
 }
-}
+// }
 }
 
 .Footer {
@@ -106,17 +113,19 @@ cursor: pointer;
 
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 1100px) {
     .footerModal {
         width:90vw;
+        height: 90vh;
         top: 8vh;
-        left:5vw;
+        left:8vw;
         .titleMod{
             margin: -2vh 0 -5vh;
         }
         .membri{
            flex-direction: column;
-           gap: 0 ;
+           margin-left: 3vw;
+           gap: 2vh;
 
            .membro{
                display: flex;
@@ -152,27 +161,27 @@ cursor: pointer;
                 }
             }
             .membroImg{
-               width: 13vw;
+               width: 11vw;
 
 
             }
             &:hover{
-                height: 8vh;
+                height: 10vh;
                 width: 85vw;;
-                transform:translateX(-5vw) ;
+                transform:translatex(-2vw);
             }
             }
         }
         .imgCloseMod{
-            width: 100%;
-            position:fixed;
-            left: 60vw;
-            bottom: 22vh;
+            // width: 100%;
+            position:relative;
+            // left: 60vw;
+            // bottom: 22vh;
         .imgModal {
-        width: 150px;
-        height: 150px;
-        cursor: pointer;
-        
+            top: 85vh;
+            left: 70vw;
+            width: 125px;
+            height: 125px;
         }
         }
 
