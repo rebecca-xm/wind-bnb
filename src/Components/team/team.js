@@ -33,7 +33,7 @@ export const team = [
         linkedin: "https://www.linkedin.com/in/fabrizio-cottone-developer",
         github: "https://github.com/Fablizio",
         sector: "Front-end Developer",
-        photo: "https://media-exp1.licdn.com/dms/image/D4D35AQGdfU7W4r-ivA/profile-framedphoto-shrink_200_200/0/1643476467300?e=1644091200&v=beta&t=AMTRO_ThybxTh43j1ZHG_Am1B2rn_Lty8Y1cES2mBFg",
+        photo: "https://media-exp1.licdn.com/dms/image/D4D35AQGdfU7W4r-ivA/profile-framedphoto-shrink_800_800/0/1643476467300?e=1644231600&v=beta&t=uzbh1FTmpIsbOJdPNL3zi43bAeRqv2uOixO6pWpF07I",
         logoLinkedin: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Antu_linkedin.svg/512px-Antu_linkedin.svg.png",
         logoGithub: "https://upload.wikimedia.org/wikipedia/commons/c/c6/Font_Awesome_5_brands_github-square.svg"
       
