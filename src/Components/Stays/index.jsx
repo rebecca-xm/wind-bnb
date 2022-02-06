@@ -4,8 +4,8 @@ import styles from "./stays.module.scss";
 const Stays = ({ count }) => {
   return (
     <div className={styles.stays}>
-      <h1>Stays in Finland</h1> 
-      <p>  {count}+ stays</p>
+      <h2>Stays in Finland</h2> 
+      <h2 className={styles.staysNum}>  {count}+ stays</h2>
     </div>
   );
 };

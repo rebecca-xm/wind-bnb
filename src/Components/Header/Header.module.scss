@@ -51,3 +51,21 @@ h1 {
     row-gap: 10px;
     margin: auto 4.8%;
 }
+
+@media screen and (max-width: 460px) {
+
+    .header {
+        flex-direction:column;
+        width: 100%;
+        margin: 30px;
+
+        .Searchbar{
+            width: 80vw;
+            padding: 14px 0;
+            border-radius: 15px;
+            margin-top: 40px;
+
+        }
+
+}
+}

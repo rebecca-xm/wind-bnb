@@ -64,3 +64,9 @@
     text-overflow: ellipsis;
   }
 }
+
+@media screen and (max-width: 460px) {
+  .card_description{
+    width: 80vw;
+  }
+}

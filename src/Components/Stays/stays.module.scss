@@ -1,5 +1,9 @@
 .stays{
     display:flex;
     justify-content: space-between;
-    margin: 0 10vh;
+    margin: 0 8vw;
+    .staysNum{
+        padding-top: 17px;
+        font-size: 14px;
+    }
 }
