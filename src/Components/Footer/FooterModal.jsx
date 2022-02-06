@@ -1,6 +1,6 @@
 import styles from "./Footer.module.scss";
 import logo from "./logo.png";
-import { team } from "../team/team";
+import  team  from "../team/team.json";
 import { useState } from "react";
 
 
