@@ -5,9 +5,9 @@
 }
 
 .Searchbar{
-    display: wrap;
+    // display: wrap;
     display:flex;
-    align-items:flex-start;
+    // align-items:flex-start;
     align-items:center;
     border-width: 2px;
     border-radius:9999px;
@@ -56,15 +56,23 @@ h1 {
     
     .header {
         flex-direction:column;
-        width: 100%;
-        margin: 30px;
+        width: 100vw;
+        margin: 2vh 5vw;
 
         .Searchbar{
-            width: 80vw;
-            padding: 14px 0;
+            width: 90vw;
+            padding: 1.5vh 0;
             border-radius: 15px;
-            margin-top: 40px;
-           
+            margin-top: 3vh;
+                .SearchbarInput{
+                    padding-left: 3vw;
+                    width: 40vw;
+            }
+            .searchIcon{
+                width: 5vw;
+                height: 2vh;
+                padding: 0.5vh;
+            }
         }
         
 }
