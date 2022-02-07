@@ -2,12 +2,12 @@
   display: flex;
   border-width: 2px;
   background-color: white;
-  width: 100%;
+  width: 100vw;
   height: auto;
   max-height: 40%;
-  padding: 2px;
+  // padding: 2px;
   padding-top: 5vh;
-  padding-bottom: 5px;
+  padding-bottom: 3vh;
   position: fixed;
   top: 0;
   box-shadow: 0 0 0 200vh rgba(0, 0, 0, 0.4);
@@ -16,15 +16,15 @@
   .formSearch {
     display: flex;
     flex-direction: column;
-    margin-left: 10vh;
-    margin-bottom: 5rem;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
 
     .locInp {
       border: 1px solid black;
       border-radius: 10px;
-      padding: 0.2rem 18rem 0rem 1.5rem ;
-      height: 3rem;
-      margin-bottom: 1rem;
+      padding: 0.2vh 18vw 1.2vh 1.5vw ;
+      height: 4vh;
+      margin-bottom: 1vh;
       
 
 
@@ -35,11 +35,11 @@
     }
     
     .divCity{
-      margin-left: 1.5rem;
-      margin-top: 0.5rem;
+      margin-left: 1vw;
+      margin-top: 0.7vh;
 
     .iconMap{
-      width: 1.2rem;
+      width: 1vw;
 
     }
 
@@ -48,7 +48,7 @@
       border: none;
       color: rgb(47, 47, 47);
       font-size: 1rem;
-      padding: 0.5rem;
+      padding: 0.7vh;
       cursor: pointer;
 
       }  
@@ -59,7 +59,7 @@
       display: flex;
       flex-direction: column;
       
-      gap: 1rem;
+      gap: 1vw;
 
     .label {
       font-weight: bold;
@@ -75,8 +75,8 @@
         border: 1px solid black;
         border-radius: 10px;
         // margin: 20px 50px;
-        padding: 0.2rem 18rem 0rem 1.5rem ;
-        height: 3rem;
+        padding: 0.2vh 18vw 1.2vh 1.5vw ;
+        height: 4vh;
 
         
 
@@ -88,7 +88,7 @@
       }
     }
     .inpFormAdCh{
-      width: 2rem;
+      width: 1.5vw;
       text-align: center;
       border: none;
       font-weight: bold;
@@ -105,8 +105,8 @@
     .aduChi {
       display: flex;
       flex-direction: column;
-      margin-top: 0.5rem;
-      margin-left: 1rem;
+      margin-top: 0.6vh;
+      margin-left: 1vw;
 
     }
     
@@ -116,8 +116,9 @@
     // display:flex;
     // align-items:flex-start;
     // align-items:center;
-    height: 3rem;
-    padding: 0.1rem 10rem 0 10rem ;
+    height: 4vh;
+    width: 15vw;
+    padding: 0.6vh 9vw 0.6vh 9vw ;
 
     border-width: 2px;
     border-radius:10px;
@@ -128,16 +129,48 @@
 
 
    .searchIcon {
-      height: 2.2rem;
-      width: 6rem;
+      height: 3.8vh;
+      width: 5.5vw;
       color:white;
       background-color:rgb(219, 80, 80);
      border-radius:10px;
-     padding: 5px;
+    //  padding: 5px;
      cursor: pointer;
 
      position: relative;
    }
   }
   
+  @media screen and (max-width: 1100px) {
+    .Searchbar{
+      flex-direction: column;
+      width: 100%;
+      max-height: none;
+      .formSearch{
+        margin-left: 2vw;
+        margin-bottom: 2vh;
+      }
+      .formguest{
+        margin-bottom: 2vh;
+        margin-left: 2vw;
+        .inpFormAdCh{
+          width: 4vw;
+        }
+      }
+    }
   
+  .Icona {
+    height: 4vh;
+    width: 10vw;
+    padding: 0.6vh 9vw 0.6vh 9vw ;
+
+   .searchIcon {
+      height: 3.8vh;
+      width: 10vw;
+
+   }
+  }
+  .Searchbar > .Icona {
+    align-self: center;
+  }
+}

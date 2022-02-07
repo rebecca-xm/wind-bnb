@@ -3,8 +3,10 @@
     width: 52vw;
     height: 50vh;
     background-color:white;
-    top: 10vh;
-    left: 30vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
     z-index: 1;
     border-radius:20px;
     box-shadow:0 0 0 200vh rgba(0, 0, 0, 0.5);
@@ -89,8 +91,10 @@
     
     .imgModal {
         position: fixed;
-    bottom: 40vh;
-    left: 53.7vw;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 width: 150px;
 height: 150px;
 cursor: pointer;
@@ -117,8 +121,8 @@ cursor: pointer;
     .footerModal {
         width:90vw;
         height: 90vh;
-        top: 8vh;
-        left:8vw;
+        // top: 8vh;
+        // left:8vw;
         .titleMod{
             margin: -2vh 0 -5vh;
         }
@@ -161,7 +165,8 @@ cursor: pointer;
                 }
             }
             .membroImg{
-               width: 11vw;
+               width: 10vw;
+               height: 10vw;
 
 
             }
